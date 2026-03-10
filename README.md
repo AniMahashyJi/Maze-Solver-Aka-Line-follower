@@ -1,74 +1,36 @@
-# Robotics Summer Project 2025-26
+🤖 Line Follower Bot
+First Year Robotics Team – Tryst 2026, IIT Delhi
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Status-In%20Development-yellow" alt="Status: In Development">
-  <img src="https://img.shields.io/badge/Team-Robotics%20Club-blue" alt="Team: Robotics Club">
-  <img src="https://img.shields.io/badge/Platform-Arduino-orange" alt="Platform: Arduino">
-  <div align="center">
-    <img src="./photos/foto_1.png" width="600" alt="Project Image">
-    <br>
-    </h1>Add project specific image on ./photos/foto_1.png</h1> 
-  </div>
-</div>
+This repository contains the design, hardware configuration, and implementation of a Line Follower Robot developed by the First Year Robotics Team at IIT Delhi for Tryst 2026.
 
-## 🤖 Project Overview
+The robot autonomously follows a predefined path using infrared sensors and a microcontroller-based control system, making real-time adjustments to maintain alignment with the track.
 
-This repository houses the codebase for the **!TODO(project name)**. It serves as a comprehensive collection of resources including code, CAD models, calculations, and component datasheets. Our aim is to create a well-documented reference that will enable future teams to build upon our work.
+📌 Overview
 
-### 🎯 Design Goals
-!ToDo
+A Line Follower Robot is an autonomous robot designed to detect and follow a line drawn on a surface. The robot uses IR sensors to detect contrast between the line and the background, and based on this input the microcontroller dynamically adjusts motor speeds to keep the robot on the path.
 
-some sample
-- ✅ Compact design (within 100×100mm)
-- ✅ Efficient corner turning capability
-- ✅ Fast maze-solving algorithm
-- ✅ Differential drive with high-speed motors
+The goal of this project was to:
 
+Build a reliable line following robot
 
-## 🧠 Algorithm Development
-!ToDo()
+Experiment with different sensor configurations
 
-## ⏱️ Project Timeline
-Main idea is to build a very very basic version first, probably within 2 weeks and then work on modifying it, (believer me doing otherwise is stupidity...)
+Understand hardware–software integration
 
-### Week 1: Introduction
-- Review the competition rulebook
--  Be familiar with github
--  Brainstorm ideas and design concepts based in the video,
--  Prepare Bill of Materials
--  Draft electronic system diagram
--  !TODO()
+Test real-world performance during continuous operation
 
+📂 Resources
 
-### Week 2: Hardware Assembly
--  Assemble mechanical components
-- !TODO()
+The repository also includes several supporting files related to the development of the bots.
 
-### Week 3: Debugging
--  Hardware and software troubleshooting
--  !TODO()
+▸ Problem Statement
+The original competition problem statement for the line follower task at Tryst 2026 has been included for reference.
 
-### Week 4: Algorithm Refinement
--  Enhance hardware robustness
--  !TODO()
+▸ CAD Models
+CAD models for both Bot 1 and Bot 2 are available in the repository to help understand the mechanical design and component placement.
 
-### Weeks 5-7: Progressive Enhancements
-- 🔄 Implement iterative improvements (tbd)
-- !TODO()
+▸ PCB Design
+The PCB designed for Bot 1 has also been included.
 
-## 📚 Resources
-
-### Tools and References (tbd)
-- !TODO()
-
-### Development Software
-- !TODO()
-
-
-
-## 🤝 Contributor Notes
-- We follow the [standard Git workflow](https://www.geeksforgeeks.org/git-workflows-with-open-source-collaboration/) for collaboration
-- Suggestions for improvement are welcome via **Issues** or Discussions.
-
----
-
+⚠ Recommendation:
+Do not directly reuse the code without reviewing it. Future teams are encouraged to modify, optimize, and enhance the control logic according to their hardware configuration and competition requirements.
