@@ -1,42 +1,31 @@
-# Hardware Documentation
+🛠 Hardware Components
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Status-In%20Development-yellow" alt="Status: In Development">
-  <img src="https://img.shields.io/badge/Team-Robotics%20Club-blue" alt="Team: Robotics Club">
-  <img src="https://img.shields.io/badge/Dimensions-60×100mm-green" alt="Dimensions: 60×100mm">
-</div>
+Two different bots were developed and tested during the project for experimentation with different sensor configurations.
 
-## 🔧 Hardware Specifications
+🤖 Bot 1
 
-- **Dimensions**: !TODO()
-- **Drive System**: Differential drive 
-- **Sensors**:
-  - !TODO()
-- **Power**: 3.7V LiPo battery
+Components used:
 
-### Adding New CAD Files
+▸ Microcontroller: Arduino Nano
+▸ Motors: BO Motors (12V, 200 RPM)
+▸ Motor Driver: L298N
+▸ IR Sensors: TCRT5000L
+▸ Multiplexer: CD74HC4067 (16-channel MUX used for handling multiple sensors)
+▸ Support Wheel: Castor Wheel 
 
-When adding new design files, please follow these guidelines:
-1. Create a new subdirectory if your design represents a major component
-2. Use descriptive filenames with version numbers (e.g., `chassis_v2.ipt`)
-3. Include a brief README in each directory describing the components
-4. For 3D printable files, include recommended print settings
+🤖 Bot 2
 
-## 🔌 Electronics Design
-!TODO()
+Components used:
 
-### Base Configuration
-- **Microcontroller**: !TODO()
-- **Motor Driver**: !TODO()
-- **Sensor Interface**: !TODO()
+▸ Microcontroller: Arduino Uno
+▸ Motors: BO Motors (12V, 200 RPM)
+▸ Motor Driver: L298N
+▸ IR Sensor Module: RLS-08 (8-channel line sensor array)
+▸ Support Wheel: Castor Wheel
 
+📚 Learnings
 
-## 📋 Bill of Materials
-!TODO()
-[Link to detailed BOM spreadsheet]
+During the development and testing of the bots, the team observed some practical hardware limitations and important design lessons.
 
----
-
-<div align="center">
-  <i>For software documentation, please see the <a href="../CodeBase/README.md">Software README</a></i>
-</div>
+▸ Motor Driver Heating Issue
+The L298N motor driver was observed to heat up significantly during operation. After running the bot for some time, this heating caused unstable behaviour in the motors, which resulted in random or inconsistent motion of the robot.
